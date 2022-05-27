@@ -21,20 +21,34 @@ function runQuiz() {
         question: 'Tim Tebow graduated UF before playing in the NFL.',
         answer: true
         }
-    ]
+    ];
 
-    var numOfTrues = 0;
-    for (var i=0; i<questionsArr.length; i++) {
+    var numOfConfirms = 0;
+    for (var i = 0; i<questionsArr.length; i++) {
         var ask = questionsArr[i];
-        var answers = confirm(ask);
-        if (answers) {
-            numOfTrues++;
+        var response = confirm(ask);
+        if (response) {
+            numOfConfirms++;
         }
     }
-    if (numOfTrues = 5) {
-        alert("Congrats! You gave all correct answers.");
-    } else {
-        alert("Sorry, one or more answers are not correct.");
+
+    function numOfTrues(questionsArr) {
+        var counter = 0; 
+        for (var i = 0; i < questionsArr.length; i++) {
+            if (questionsArr[i].answer === true) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+    function numOfFalse(questionsArr) {
+        var counter = 0;
+        for (var i = 0; i < questionsArr.length; i++) {
+            if (questionsArr[i].answer === false) {
+                counter++;
+            }
+        }
+        return counter;
     }
 
 }
