@@ -24,14 +24,13 @@ function runQuiz() {
     ];
 
     var numOfConfirms = 0;
-    for (var i = 0; i<questionsArr.length; i++) {
-        var ask = questionsArr[i];
-        var response = confirm(ask);
+    for (var i = 0; i < questionsArr.length; i++) {
+        var response = confirm(questionsArr[i])
         if (response) {
-            numOfConfirms++;
+            numOfConfirms++
         }
     }
-
+/*
     function numOfTrues(questionsArr) {
         var counter = 0; 
         for (var i = 0; i < questionsArr.length; i++) {
@@ -50,10 +49,13 @@ function runQuiz() {
         }
         return counter;
     }
-
+*/
 }
 
-console.log("number of trues = " + numOfTrues(questionsArr));
-console.log("number false = " + numOfFalse(questionsArr));
+console.log(typeof questionsArr);
+//console.log("number of trues = " + numOfTrues(questionsArr));
+//console.log("number false = " + numOfFalse(questionsArr));
 
-//runQuiz()
+//  let result = Array.isArray(questionsArr);
+
+runQuiz()
