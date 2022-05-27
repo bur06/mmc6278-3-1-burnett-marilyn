@@ -53,4 +53,7 @@ function runQuiz() {
 
 }
 
+console.log("number of trues = " + numOfTrues(questionsArr));
+console.log("number false = " + numOfFalse(questionsArr));
+
 //runQuiz()
