@@ -23,4 +23,10 @@ var questionsArr = [
     }
 ]
 
+for (var i=0; i<questionsArr.length; i++) {
+    var ask = questionsArr[i];
+    var answers = confirm(ask)
 }
+
+}
+//runQuiz()
