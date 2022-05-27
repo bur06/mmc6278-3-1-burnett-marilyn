@@ -23,9 +23,11 @@ function runQuiz() {
         }
     ];
 
+    let arrLoop = Array.isArray(questionsArr);
+
     var numOfConfirms = 0;
-    for (var i = 0; i < questionsArr.length; i++) {
-        var response = confirm(questionsArr[i])
+    for (var i = 0; i < arrLoop.length; i++) {
+        var response = confirm(arrLoop[i])
         if (response) {
             numOfConfirms++
         }
@@ -52,10 +54,9 @@ function runQuiz() {
 */
 }
 
-console.log(typeof questionsArr);
 //console.log("number of trues = " + numOfTrues(questionsArr));
 //console.log("number false = " + numOfFalse(questionsArr));
 
-//  let result = Array.isArray(questionsArr);
+
 
 runQuiz()
