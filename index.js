@@ -39,16 +39,17 @@ function runQuiz() {
     questionArr.answer[3] = true;
     questionArr.answer[4] = false;
 
-    var userInput = questionsArr[i].answer;
+//    var userInput = questionsArr[i].answer;
 
     var score = 0;
 
     for (var i = 0; i < questionsArr.answer.length; i++) {
-        if (userInput[i] == correct[i]) {
+        if (response[i] == correct[i]) {
             score += 1;
         } else {
             score += 0;
         }
+    return score;
     }
 
 
