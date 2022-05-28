@@ -6,8 +6,8 @@ function runQuiz() {
         answer: true
         },
         {
-        question: "There are two UF mascots.",
-        answer: true
+        question: "There is one UF mascot.",
+        answer: false
         },
         {
         question: "UF has had three Heisman winning quarterbacks.",
@@ -18,8 +18,8 @@ function runQuiz() {
         answer: true
         },
         {
-        question: "Tim Tebow graduated UF before playing in the NFL.",
-        answer: true
+        question: "Tim Tebow graduated UF after playing in the NFL.",
+        answer: false
         }
     ];
     Array.isArray(questionsArr);
@@ -31,6 +31,31 @@ function runQuiz() {
             numOfConfirms++
         }
     }
+
+    var correct = [];
+    questionArr.answer[0] = true;
+    questionArr.answer[1] = false;
+    questionArr.answer[2] = true;
+    questionArr.answer[3] = true;
+    questionArr.answer[4] = false;
+
+    var userInput[] = questionArr.answer.value;
+
+    function getScore() {
+        var score = 0;
+
+        for (var i = 0; i < questionsArr.answer.length; i++) {
+            if (userInput[i] == correct[i]) {
+                score += 1;
+            } else {
+                score += 0;
+            }
+        }
+        return score;
+    }
+
+
+
 
 /*
     function numOfTrues(questionsArr) {
