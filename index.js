@@ -22,12 +22,18 @@ function runQuiz() {
         answer: true
         }
     ];
+    Array.isArray(questionsArr);
+    questionsArr.every(runQuiz);
 
-    let arrLoop = Array.isArray(questionsArr);
+    function runQuiz(stmt) {
+        return stmt;
+      }
+
+    console.log(typeof stmt)
 
     var numOfConfirms = 0;
-    for (var i = 0; i < arrLoop.length; i++) {
-        var response = confirm(arrLoop[i])
+    for (var i = 0; i < questionsArr.length; i++) {
+        var response = confirm(questionsArr[i])
         if (response) {
             numOfConfirms++
         }
