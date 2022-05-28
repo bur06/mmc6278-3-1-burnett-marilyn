@@ -1,5 +1,4 @@
 // Your code here
-
 function runQuiz() {
     var questionsArr = [
         {
@@ -27,11 +26,12 @@ function runQuiz() {
 
     var numOfConfirms = 0;
     for (var i = 0; i < questionsArr.length; i++) {
-        var response = confirm((questionsArr[i].question))
+        var response = confirm(questionsArr[i].question)
         if (response) {
             numOfConfirms++
         }
     }
+
 /*
     function numOfTrues(questionsArr) {
         var counter = 0; 
