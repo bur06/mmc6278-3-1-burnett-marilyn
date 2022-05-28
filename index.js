@@ -24,7 +24,7 @@ var questionsArr = [
 Array.isArray(questionsArr);
 
 const quizBtn = document.getElementById("start-quiz");
-quizBtn.addEventListener("click", runQuiz);
+quizBtn.addEventListener("click", runQuiz());
 
 function runQuiz() {
     var numOfConfirms = 0;
