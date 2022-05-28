@@ -24,11 +24,10 @@ function runQuiz() {
         }
     ];
     Array.isArray(questionsArr);
-    console.log(questionsArr.every(question(typeof question)));
 
     var numOfConfirms = 0;
     for (var i = 0; i < questionsArr.length; i++) {
-        var response = confirm((questionsArr[i]))
+        var response = confirm((questionsArr[i].question))
         if (response) {
             numOfConfirms++
         }
