@@ -35,6 +35,8 @@ function runQuiz() {
         }
     }
 
+
+/*    
     var correct = [];
     questionArr.answer[0] = true;
     questionArr.answer[1] = false;
