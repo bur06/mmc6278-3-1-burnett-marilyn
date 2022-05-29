@@ -1,4 +1,5 @@
 // Your code here
+debugger
 var questionsArr = [
     {
     question: "Gatorade was formulated at UF",
@@ -23,6 +24,7 @@ var questionsArr = [
 ];
 Array.isArray(questionsArr);
 
+
 const quizBtn = document.getElementById("start-quiz");
 quizBtn.addEventListener("click", runQuiz());
 
@@ -33,9 +35,13 @@ function runQuiz() {
         if (response) {
             numOfConfirms++
         }
-        alert("You have scored " + numOfConfirms +" out of 5.")
     }
+//   var percent = numOfConfirms{2,3}%;
+    alert("You have scored " + numOfConfirms +" out of 5.");
 
+//    sinon
+//    .stub(window, 'questionsArr');
+//    .value(new Array(5).fill({ question: "", answer: true }));
 
 /*
 function runQuiz() {
