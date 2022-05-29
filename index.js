@@ -30,14 +30,14 @@ quizBtn.addEventListener("click", runQuiz());
 function runQuiz() {
     var numOfConfirms = 0;
     for (var i = 0; i < questionsArr.length; i++) {
-        var response = confirm(questionsArr[i].question)
+        var response = confirm(questionsArr[i].question);
         if (response) {
-            numOfConfirms++
+            numOfConfirms++;
         }
     }
 
-    var result = Math.round(numOfConfirms * 20.0);
+    var result = Math.round(numOfConfirms * 20);
     alert("Your quiz score = " + result +"% !");
 }
 
-runQuiz()
+runQuiz();
