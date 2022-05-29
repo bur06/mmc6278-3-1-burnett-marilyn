@@ -36,12 +36,17 @@ function runQuiz() {
             numOfConfirms++
         }
     }
-//   var percent = numOfConfirms{2,3}%;
-    alert("You have scored " + numOfConfirms +" out of 5.");
 
-//    sinon
-//    .stub(window, 'questionsArr');
-//    .value(new Array(5).fill({ question: "", answer: true }));
+    var result = (numOfConfirms * 20);
+    alert("Your quiz score = " + result +"% !");
+
+
+
+
+//expect(alertStub.called).to.be.true
+//expect(/\d{2,3}%/g.test(alertStub.lastCall.args[0])).to.be.true
+//    sinon.stub(window, 'questionsArr');
+//    sinon.value(new Array(5).fill({ question: "", answer: true }));
 
 /*
 function runQuiz() {
@@ -53,7 +58,6 @@ function runQuiz() {
         }
     }
 
-
     var correct = [];
     questionArr.answer[0] = true;
     questionArr.answer[1] = false;
@@ -61,7 +65,7 @@ function runQuiz() {
     questionArr.answer[3] = true;
     questionArr.answer[4] = false;
 
-//    var userInput = questionsArr[i].answer;
+    var userInput = questionsArr[i].answer;
 
     var score = 0;
 
@@ -73,9 +77,6 @@ function runQuiz() {
         }
     return score;
     }
-
-
-
 
 /*
     function numOfTrues(questionsArr) {
@@ -98,10 +99,5 @@ function runQuiz() {
     }
 */
 }
-
-//console.log("number of trues = " + numOfTrues(questionsArr));
-//console.log("number false = " + numOfFalse(questionsArr));
-
-
 
 //runQuiz()
