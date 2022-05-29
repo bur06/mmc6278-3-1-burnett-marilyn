@@ -36,7 +36,8 @@ function runQuiz() {
         }
     }
 
-    var result = Math.round(numOfConfirms / 5) * 100;
+    var result = (numOfConfirms / 5) * 100;
+    Math.round(result);
     alert("Your quiz score = " + result +"% !");
 }
 
